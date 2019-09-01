@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //사용자가 입력한 수들의 갯수와 합을 구하는 프로그램을 작성해봅니다. (0을 받으면 입력 종료)
+        //0이 입력되면 종료되는 while문
+        //prompt가 입력될 때마다 커지는 숫자 i
+        //prompt를 입력받아 수를 더하는 sum
+
+        // for(var i =0 ; i<2;i++){
+        //     prompt('아무거나')
+        // }
+        var n;
+        var sum =0;
+        var i = 0;
+        while(n!=0){
+            var n = Number(prompt("0을 입력하면 종료"));
+            sum+=n;
+            i++
+        }
+        console.log(i-1,sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

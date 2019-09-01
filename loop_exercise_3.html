@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>소수판별하기</title>
+    <script>
+        //1, 
+        // 수를 입력 받는다. (정수를 받는다.)
+        // //자기자신까지 나눈다. 
+        //나머지가 0이 되면 중단한다.
+        //i가 n에 도달하면 소수로 밝혀짐.
+        
+        // var n = parseInt(prompt("i'll determine whether the number is prime."))
+        // for(var i=2; i<n ;i++){
+        //     if(n%i===0){
+        //         alert("this number is not prime");
+        //         break;
+        //     } else if(i===n-1){
+        //         alert("this number is prime");
+        //     }
+        // } 
+
+        //2, 
+        //인수의 갯수를 세는 프로그램.
+        //나눠서 0이 나올 때마다 i를 +1한다. 그리고 이 갯수가 2개를 넘어가면 소수가 아니라고 판정한다. 
+
+        // var n = parseInt(prompt("i'll determine whether the number is prime."));
+        // var countNum = 0;
+        // for(var i =1; i<=n; i++){
+        //     if (n%i===0){
+        //         countNum++;
+        //     }
+        // }
+
+        // if(countNum===2){
+        //     alert(n+" is prime");
+        // } else {
+        //     alert(n+" is not prime");
+        // }
+
+        //3,
+        //isFalse를 이용한 방법 : 한 번이라도 걸리면 표식을 남긴다. 
+        var isPrime = true;
+        var n = parseInt(prompt("i'll determine whether the number is prime."));
+        for(var i =2; i<n; i++){
+            if (n%i===0){
+                isPrime = false;
+            }
+        }
+
+        if(isPrime==false){
+            alert(n+" is not prime");
+        } else {
+            alert(n+" is prime"); 
+        }
+        
+    </script>
+
+</head>
+<body>
+
+    
+</body>
+</html>
