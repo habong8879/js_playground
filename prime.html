@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var numbers = {};
+    numbers.all = [];
+    numbers.prime = [];
+
+    numbers.isPrime = function(number){
+        for(var i=2;i<number;i++){
+        if(number%i===0){
+            return false;
+        } else {return true}
+    };
+    }
+
+    numbers.getAllPrimes = function(){
+        for(var i=0; i < this.all.length ; i++){
+        var n  = this.all[i];
+        if(n.isPrime === true){
+            this.prime.push();
+        }
+    }
+    }
+    
+    numbers.getAllNumbers = function(maxNum){
+        for(var i = 1; i<=max_numn; i++){
+            numbers.all.push();
+        }
+
+    }
+
+    numbers.getAllNumbers(10000);
+    numbers.getAllPrimes();
+    
+
+
+
+    
+
+
+
+    //numbers all에 10000까지의 수를 넣는다
+    //all에서 isPrime을 거쳐
+    //isPrime에서 true가 나온 경우, 그 수를 prime에 넣는다. 
+    // prime에 넣는다.
+    //prime을 출력한다. 
+    
+
+    </script>
+    
+</body>
+</html>

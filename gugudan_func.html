@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //계산하는 함수
+        var results =[];
+
+        function calc(n){
+            for(var i=1;i<=9;i++){
+                results[i] =n*i;
+            }
+            return results;
+        }
+        //출력하는 함수
+        function prnt(i,ret){
+            document.write(i+"단<br>");
+
+            for(var n =1;n<=9;n++){
+                document.write(i+"*"+n+"="+ret[n]+"<br>");
+            };
+
+            document.write("<br>");
+
+        }
+
+        function main(){
+            for (var i = 2; i<=9; i++){
+                calc(i);
+                prnt(i,results);
+            };
+
+        }
+
+        main();
+    </script>
+    
+</body>
+</html>
